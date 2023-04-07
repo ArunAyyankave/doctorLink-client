@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
-import DOCSideAndNav from './DOCSideAndNav/DOCSideAndNav';
+import DocSideAndNav from './docSideAndNav/SideAndNav';
 
 function DocLayout() {
 
@@ -8,7 +8,7 @@ function DocLayout() {
 
   return (
     <div>
-      {location.pathname !== '/doctor/signin' && <DOCSideAndNav />}
+      {location.pathname !== '/doctor/signin' && <DocSideAndNav />}
       <Outlet />
     </div>
   )

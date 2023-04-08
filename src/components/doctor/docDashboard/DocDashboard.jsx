@@ -34,15 +34,15 @@ function DocDashboard() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
           <div className="flex flex-col p-2 items-center shadow-md justify-center space-y-2 h-auto rounded bg-gradient-to-b from-gray-100 to-gray-300 dark:bg-gray-800">
             <p className="text-sm font-roboto text-gray-500 dark:text-gray-500">TOTAL PATIENTS</p>
-            <p className='text-4xl text-gray-700 font-bold'>{info.length && info[0]?.uniqueUsers}</p>
+            <p className='text-4xl text-gray-700 font-bold'>{info && info[0]?.uniqueUsers}</p>
           </div>
           <div className="flex flex-col p-2 items-center shadow-md justify-center space-y-2 h-auto rounded bg-gradient-to-b from-gray-100 to-gray-300 dark:bg-gray-800">
             <p className="text-sm font-roboto text-gray-500 dark:text-gray-500">TOTAL APPOINTMENTS</p>
-            <p className='text-4xl text-gray-700 font-bold'>{info.length && info[0]?.totalAppointments}</p>
+            <p className='text-4xl text-gray-700 font-bold'>{info && info[0]?.totalAppointments}</p>
           </div>
           <div className="flex flex-col p-2 items-center shadow-md justify-center space-y-2 h-auto rounded bg-gradient-to-b from-gray-100 to-gray-300 dark:bg-gray-800">
             <p className="text-sm font-roboto text-gray-500 dark:text-gray-500">APPOINTMENTS BOOKED TODAY</p>
-            <p className='text-4xl text-gray-700 font-bold'>{info.length && info[0]?.todayAppointments}</p>
+            <p className='text-4xl text-gray-700 font-bold'>{info && info[0]?.todayAppointments}</p>
           </div>
           <div className="flex flex-col p-2 items-center shadow-md justify-center space-y-2 h-auto rounded bg-gradient-to-b from-gray-100 to-gray-300 dark:bg-gray-800">
             <p className="text-sm font-roboto text-gray-500 dark:text-gray-500">REMAINING SLOTS</p>
